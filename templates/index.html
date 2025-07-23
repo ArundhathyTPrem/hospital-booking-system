@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Athreya Hospital{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="bg-light text-center py-5">
+  <div class="container">
+    <h1 class="display-4 text-primary">Welcome to Athreya Hospital</h1>
+    <p class="lead">Committed to compassionate care and modern medical excellence.</p>
+    <a href="{% url 'booking' %}" class="btn btn-primary btn-lg mt-3">Book an Appointment</a>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="container my-5">
+  <h2 class="text-center mb-4 text-primary">Our Services</h2>
+  <div class="row text-center">
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <i class="fas fa-ambulance fa-3x text-primary mb-3"></i>
+          <h5 class="card-title">Emergency Care</h5>
+          <p class="card-text">24/7 trauma and emergency services with top-tier response time.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <i class="fas fa-user-md fa-3x text-primary mb-3"></i>
+          <h5 class="card-title">Qualified Doctors</h5>
+          <p class="card-text">Our specialists ensure you receive expert care across all departments.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <i class="fas fa-stethoscope fa-3x text-primary mb-3"></i>
+          <h5 class="card-title">Advanced Diagnostics</h5>
+          <p class="card-text">Equipped with modern lab and imaging technologies for accurate diagnosis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="bg-white py-5">
+  <div class="container">
+    <h2 class="text-center text-primary mb-4">Why Choose Athreya Hospital?</h2>
+    <p class="text-center">
+      At Athreya Hospital, we bring together leading medical professionals, modern facilities, and a patient-centered approach to deliver outstanding healthcare. Whether it’s a routine checkup or complex surgery, we ensure the highest standards of safety and compassion.
+    </p>
+  </div>
+</section>
+
+{% endblock %}
